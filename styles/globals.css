@@ -7,6 +7,12 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.ant-layout-sider {
+    width: 300px !important;
+    min-width: 300px !important;
+    max-width: 300px !important;
+}
+
 .movie-card {
     background-size: cover !important;
 }

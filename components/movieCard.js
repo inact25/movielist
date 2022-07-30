@@ -11,7 +11,7 @@ const MovieCard = ({movieImage, movieTitle, movieId, moviePath, movieTag, cardHe
                 hoverable
                 bordered={false}
                 style={{
-                    borderRadius: "2rem",
+                    borderRadius: "1rem",
                     width: "100%",
                     minHeight: cardHeight,
                     backgroundSize: "cover",

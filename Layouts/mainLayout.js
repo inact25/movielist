@@ -59,7 +59,11 @@ const MainLayout = (props) => {
                     left: 0,
                     top: 0,
                     bottom: 0,
-                    background: "white"
+                    background: "white",
+                    width: 300,
+                    maxWidth: 300,
+                    minWidth: 300,
+
                 }}
             >
                 <div className="logo" style={{paddingTop: "1.5rem", paddingBottom: "2rem"}}>
@@ -67,7 +71,7 @@ const MainLayout = (props) => {
                 </div>
                 <Menu mode="inline" defaultSelectedKeys={['home']} items={items}/>
             </Sider>
-            <Layout className="site-layout" style={{marginLeft: lg ? 200 : 75}}>
+            <Layout className="site-layout" style={{marginLeft: lg ? 350 : 75}}>
                 <Content style={{margin: '24px 16px 0', overflow: 'initial'}}>
                     <div className="site-layout-background">
                         {props.children}

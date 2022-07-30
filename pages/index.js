@@ -14,7 +14,7 @@ export default function Home() {
         <div>
             <MainLayout>
                 <div className="title-bar"
-                     style={{fontSize: md ? 38 : 18, fontWeight: 700, textAlign: "start", paddingBottom: "1rem"}}>
+                     style={{fontSize: md ? 24 : 18, fontWeight: 600, textAlign: "start", paddingBottom: "1rem"}}>
                     <span>Discovers</span>
                 </div>
                 <Swiper
@@ -41,7 +41,7 @@ export default function Home() {
                             spaceBetween: 50,
                         },
                         1920: {
-                            slidesPerView: 3.5,
+                            slidesPerView: 1.5,
                             spaceBetween: 20,
                         },
                         2560: {
@@ -53,14 +53,14 @@ export default function Home() {
                 >
                     {[...new Array(12)].map((item, index) =>
                         <SwiperSlide key={index}>
-                            <MovieCard cardHeight={300}/>
+                            <MovieCard cardHeight={500}/>
                         </SwiperSlide>
                     )}
                 </Swiper>
                 <div className="title-bar"
                      style={{
-                         fontSize: md ? 38 : 18,
-                         fontWeight: 700,
+                         fontSize: md ? 24 : 18,
+                         fontWeight: 600,
                          textAlign: "start",
                          paddingBottom: "1rem",
                          paddingTop: "2rem"
@@ -75,19 +75,19 @@ export default function Home() {
                     }}
                     breakpoints={{
                         640: {
-                            slidesPerView: 1,
+                            slidesPerView: 2,
                             spaceBetween: 20,
                         },
                         768: {
-                            slidesPerView: 1,
+                            slidesPerView: 3,
                             spaceBetween: 20,
                         },
                         1024: {
-                            slidesPerView: 1.25,
+                            slidesPerView: 4,
                             spaceBetween: 20,
                         },
                         1440: {
-                            slidesPerView: 3.5,
+                            slidesPerView: 2.5,
                             spaceBetween: 20,
                         },
                         2560: {
@@ -99,15 +99,15 @@ export default function Home() {
                 >
                     {[...new Array(12)].map((item, index) =>
                         <SwiperSlide key={index}>
-                            <MovieCard cardHeight={300}/>
+                            <MovieCard cardHeight={350}/>
                         </SwiperSlide>
                     )}
                 </Swiper>
 
                 <div className="title-bar"
                      style={{
-                         fontSize: md ? 38 : 18,
-                         fontWeight: 700,
+                         fontSize: md ? 24 : 18,
+                         fontWeight: 600,
                          textAlign: "start",
                          paddingBottom: "1rem",
                          paddingTop: "2rem"
@@ -117,7 +117,7 @@ export default function Home() {
                 <Row gutter={[24, 24]}>
                     {[...new Array(12)].map((item, index) =>
                         <Col xxl={4} xl={8} xs={24} md={12} key={index}>
-                            <MovieCard cardHeight={md ? 450 : 300}/>
+                            <MovieCard cardHeight={md ? 350 : 300}/>
                         </Col>
                     )}
                 </Row>
